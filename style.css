@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins", sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #e0f7ff, #cceeff);
+  color: #0f172a;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(101, 25, 104, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.hero p {
+  color: #334155;
+}
+
+/* Buttons */
+.btn-custom {
+  background: #0dcaf0;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background: #0284c7;
+  transform: scale(1.05);
+}
+
+/* Typing */
+.typing {
+  color: #0284c7;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background: transparent;
+  color: #0f172a;
+}
+
+.icon i {
+  color: #0284c7;
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+}
+/* About Section */
+#about {
+    margin-top: 50px;
+  background: transparent;
+  color: #0f172a;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+}
+
+#about p {
+  color: #334155;
+}
+
+/* Navbar Fix */
+.navbar {
+  background: rgba(216, 97, 210, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* Remove dark text issue */
+.text-light {
+  color: #0f172a !important;
+}
+
+/* Button */
+.btn-custom {
+  background: #0dcaf0;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background: #0284c7;
+  transform: scale(1.05);
+}
+/* Skills Section */
+#skills {
+  background: transparent;
+  color: #0f172a;
+}
+
+/* Skill Card */
+.skill-card {
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.skill-card i {
+  font-size: 40px;
+  color: #0dcaf0;
+  margin-bottom: 10px;
+}
+
+.skill-card h6 {
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+/* Hover Effect 🔥 */
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+/* Contact Section */
+#contact {
+  color: #0f172a;
+}
+
+/* Card */
+.contact-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Inputs */
+.custom-input {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  transition: 0.3s;
+}
+
+.custom-input:focus {
+  border-color: #0dcaf0;
+  box-shadow: 0 0 5px rgba(13, 202, 240, 0.5);
+}
+
+/* Button */
+.btn-custom {
+  background: #0dcaf0;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background: #0284c7;
+  transform: scale(1.05);
+}

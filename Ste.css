@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #1d1f22, #111827);
+}
+/* body {
+  background-color: #1d1f22;
+  color: white;
+} */
+@media (max-width: 768px) {
+  .hero-image img {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  #navbarNav {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Add dark overlay */
+  z-index: -1;
+}
+#navbarNav {
+  margin-left: auto;
+}
+#navbarNav{
+    margin-left: 390px;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+}
+input, textarea, .btn-custom {
+  width: 100%;
+}
+
+.hero {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #cbd5e1;
+}
+/* 
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+    color: #b5c9d3;
+  } */
+
+  .btn-custom {
+    margin: 0 0.5rem;
+    padding: 3px;
+    background-color: #67e8f9;
+  }
+  .btn-custom:hover {
+    background-color:#cffafe;
+  }
+  .custom-hover {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .custom-hover:hover {
+    color: #67e8f9 !important; /* Cyan-300 */
+  }
+  #btn-custom{
+    width: 200px;
+  }
+
+  /* Optional: Underline animation */
+  .custom-hover::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #67e8f9;
+    transition: width 0.3s ease;
+  }
+
+  .custom-hover:hover::after {
+    width: 100%;
+  }
+.timeline {
+  position: relative;
+  margin-left: 30px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background: #0dcaf0;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+.timeline-item.left .content {
+  margin-left: 40px;
+}
+.timeline-item.right .content {
+  margin-left: 40px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  width: 14px;
+  height: 14px;
+  background: #0dcaf0;
+  border-radius: 50%;
+  top: 10px;
+}
+.btn-custom {
+  background: linear-gradient(45deg, #0dcaf0, #17a2b8);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-custom:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #0dcaf0;
+}
+/* .btn-custom {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #138496;
+  transform: scale(1.05);
+} */
+.icon{
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+}
+.skill-box {
+  background-color: #1d1f22; /* Dark background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.skill-box:hover {
+  background-color: #343a40; /* Lighter background on hover */
+  transform: scale(1.05); /* Zoom effect */
+}
+
+.skill-icon {
+  font-size: 40px;
+  color: #17a2b8; /* Light color for icons */
+  margin-bottom: 15px;
+}
+.skill-card {
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  background-color: #2a2d31;
+}
+.skill-name {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.hero-image img {
+  width: 250px; /* Adjust as needed */
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%; /* This makes it circular */
+  transition: transform 0.3s ease;
+  box-shadow: 2px 6px 10px #17a2b8;
+  margin-left: 70px; /* Optional shadow */
+}
+.hero-image img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  cursor: pointer;
+  box-shadow: #0dcaf0 7px;
+}
+.col-6{ 
+  transition: 0.7s ease;
+  transform: scale(1);
+}
+.col-6:hover{
+  transform: scale(1.05);
+    cursor: pointer;
+}
+.hero-image img {
+  border: 3px solid #0dcaf0;
+}
